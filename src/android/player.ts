@@ -13,7 +13,7 @@ export class TNSPlayer implements TNSPlayerI {
   private _mAudioFocusGranted: boolean = false;
   private _lastPlayerVolume; // ref to the last volume setting so we can reset after ducking
   private _events: Observable;
-  private _focusType: int = android.media.AudioManager.AUDIOFOCUS_GAIN;
+  private _focusType: number = android.media.AudioManager.AUDIOFOCUS_GAIN;
 
   constructor() {
     // request audio focus, this will setup the onAudioFocusChangeListener
